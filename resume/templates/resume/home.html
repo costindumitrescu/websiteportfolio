@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>HOME PAGE</h1>
-</body>
-</html>
+{% extends 'resume/base.html' %}
+
+{% block content %}
+  <section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
+    <div class="color-block d-none d-lg-block"></div>
+    <div class="row home-details-container align-items-center">
+      <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
+      <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+        <div>
+          <img src="https://avatars1.githubusercontent.com/u/53879882?s=460&u=547c9037cfd2ae9cde56039f07422163d36c99c0&v=4" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
+            alt="my picture" />
+          <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
+          <h1 class="text-uppercase poppins-font"><span>I'm</span> Costin Dumitrescu</h1>
+          <p class="open-sans-font"> I am a full-stack developer from Montreal, Canada.
+          I'm very passionate about programming languages, developing websites, data science, music and traveling.
+          From my point of view building a website is an art, therefore I always want to go above and beyond when building one.
+          My professional goal is to enhance my expertise and bring value to my prospective employer as well as developing my
+          skills.</p>
+          <a href="about.html" class="btn btn-about">more about me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
